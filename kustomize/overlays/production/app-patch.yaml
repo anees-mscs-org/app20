@@ -1,0 +1,8 @@
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  name: app20
+spec:
+  parameters:
+    namespace: production
+    image: docker.io/syedanees85/app20:0.0.0

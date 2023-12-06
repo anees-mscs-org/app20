@@ -1,0 +1,22 @@
+---
+apiVersion: devopstoolkitseries.com/v1alpha1
+kind: AppClaim
+metadata:
+  annotations:
+    gitHubOrg: anees-mscs-org
+    gitHubRepo: app20
+  name: app20
+spec:
+  id: app20
+  compositionSelector:
+    matchLabels:
+      type: backend-db-aws
+      location: local
+  parameters:
+    namespace: development
+    image: docker.io/syedanees85/app20:latest
+    port: 8080
+    host: app20.54.211.11.133.nip.io
+    db:
+      version: "13"
+      size: medium

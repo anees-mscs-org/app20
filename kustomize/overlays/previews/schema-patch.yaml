@@ -1,0 +1,13 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: app20
+spec:
+  connection:
+    postgres:
+      host:
+        value: app20-postgresql
+      password: 
+        valueFrom:
+          secretKeyRef:
+            name: app20-postgresql
